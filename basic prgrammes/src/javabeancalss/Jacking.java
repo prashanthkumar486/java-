@@ -1,0 +1,13 @@
+package javabeancalss;
+
+public class Jacking {
+
+	public static void main(String[] args) {
+		Runner r = new Developer();
+		Runner r1 = new Testing();
+		r.work();
+		r1.work();
+
+	}
+
+}

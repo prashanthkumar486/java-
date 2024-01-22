@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean name="college" class="maven.College">
+	<property name="college">
+	
+	<map>
+	<entry key="111" value="sjcit"></entry>
+	<entry key="222" value="bgs"></entry>
+	</map>
+	</property>
+	
+	<property name="branch">
+	<bean name="branch" class="maven.Branch">
+	<property name="branch">
+	<set>
+	<value>ece</value>
+	<value>cse</value>
+	</set>
+	</property>
+	
+	<property name="student" >
+	<bean name="student" class="maven.Student">
+	<property name="sname">
+	<list>
+	<value>madan</value>
+	<value>prashu</value>
+	</list>
+	</property>
+	</bean>
+	
+	</property>
+	</bean>
+	
+	</property>
+	</bean>
+
+</beans>
+

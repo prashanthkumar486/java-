@@ -1,0 +1,23 @@
+package annotationlyfcycle;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		System.out.println("project started");
+		ApplicationContext context = new ClassPathXmlApplicationContext("interfacelyfbean/config1.xml");
+       
+		
+		ChickenFired d= context.getBean("c1", ChickenFired.class);
+      ((AbstractApplicationContext) context).registerShutdownHook();
+	 
+		System.out.println(d);	
+		
+		System.out.println("project ended");
+
+	}
+
+}

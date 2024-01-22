@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;prashanth/src/com/ArrayInoutFizz.java&apos; to &apos;ArrayInputFizz.java&apos;" description="Rename resource &apos;ArrayInoutFizz.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/ArrayInoutFizz.java" name="ArrayInputFizz.java" stamp="1665982708832" updateReferences="true"/>
+</session>

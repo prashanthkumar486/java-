@@ -1,0 +1,12 @@
+package abcdef;
+
+public class C implements A,B{
+	public void  dsplay() {
+		System.out.println("a method");
+	}
+
+	@Override
+	public void display() {
+		System.out.println("b methd");
+	}
+}

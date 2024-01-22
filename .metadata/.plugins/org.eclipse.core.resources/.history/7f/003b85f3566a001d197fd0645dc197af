@@ -1,0 +1,30 @@
+package ques;
+
+public class QueDs {
+	static int size=4;
+	static int first=0, last=0; 
+	 int[] arr=new int[size];
+	public static boolean isfull() {
+		if(last==size) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	public static void enque(int ele) {
+		if(isfull()) {
+			System.out.println("que is full");
+		}
+		else {
+			arr[last]=ele;
+			last++;
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

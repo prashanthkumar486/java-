@@ -1,0 +1,30 @@
+package javabeancalss;
+
+public class Student {
+
+	
+	String name;
+	
+	Student(String name){
+		this.name=name;
+	}
+	
+	@Override
+	public String toString() {
+		return "Student [name=" + name + "]";
+	}
+
+	public static void main(String[] args) {
+	
+	Student s =new Student("tom");
+	Student s1= new Student("jerry");
+	
+	System.out.println(s);
+	System.out.println(s1);
+	
+	System.out.println(s.toString());
+	System.out.println(s1.toString());
+	
+
+}
+}

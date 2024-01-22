@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean name="employee1" class="maven4.Employee" c:e_id="100" c:e_name="prashu"></bean>
+	<bean name="employee2" class="maven4.Employee" c:e_id="101" c:e_name="madan"></bean>
+	<bean name="employee3" class="maven4.Employee" c:e_id="103" c:e_name="naveen"></bean>
+	<bean name="employee4" class="maven4.Employee" c:e_id="104" c:e_name="karthik"></bean>
+	<bean name="employee5" class="maven4.Employee" c:e_id="105" c:e_name="nayan"></bean>
+	
+   <bean name="company" class="maven4.Company" c:c_id="456" c:c_name="jspider"> 
+   <constructor-arg>
+   <list>
+   <ref bean="employee1"></ref>
+   <ref bean="employee2"></ref>
+   <ref bean="employee3"></ref>
+   <ref bean="employee4"></ref>
+   <ref bean="employee5"></ref>
+   </list>
+   </constructor-arg>
+   </bean> 
+</beans>
+

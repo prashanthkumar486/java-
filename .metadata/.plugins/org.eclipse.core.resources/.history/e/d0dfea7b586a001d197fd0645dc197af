@@ -1,0 +1,53 @@
+package ques;
+
+public class QueDs {
+	static int size=4;
+	static int first=0, last=0; 
+	static  int[] arr=new int[size];
+	public static boolean isfull() {
+		if(last==size) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	public static boolean isEmpty() {
+		if(last==first) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	public static void enque(int ele) {
+		if(isfull()) {
+			System.out.println("que is full");
+		}
+		else {
+			arr[last]=ele;
+		
+		}
+		last++;
+	}
+	public static void display() {
+		if(isEmpty()) {
+			System.out.println("que is empty");
+		}
+		else {
+		  for(int i=0;i<last-1;i++) {
+			  arr[i]=arr[i+1];
+			  last--;
+			  System.out.println(arr[i]+" ");
+		  }
+		}
+	}
+
+	public static void main(String[] args) {
+		display();
+		enque(11);
+		enque(12);
+
+	}
+
+}

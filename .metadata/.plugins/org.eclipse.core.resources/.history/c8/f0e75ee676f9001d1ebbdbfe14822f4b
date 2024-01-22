@@ -1,0 +1,29 @@
+package com;
+
+public class Matrimony {
+
+	public static void main(String[] args) {
+		int age = 5;
+		char gender='f';
+		
+		if(gender == 'm') {
+			if(age>=21) {
+				System.out.println("you are eligible for marrige");		
+			}
+		
+		else {
+			System.out.println("keep patience ");
+		}}
+		else if(gender =='f') {	
+		if(age>=18) {
+			System.out.println("you are eligible for marriage");
+		}
+		else { 
+			System.out.println("keep patience");
+		}}
+		else {
+			System.out.println("enter valid gender");
+		}
+	}
+
+}

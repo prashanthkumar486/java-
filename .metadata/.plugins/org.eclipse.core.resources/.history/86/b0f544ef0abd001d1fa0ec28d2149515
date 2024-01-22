@@ -1,0 +1,22 @@
+package org;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		System.out.println("project started");
+		ApplicationContext context = new ClassPathXmlApplicationContext("org/config1.xml");
+		
+		Student a = (Student) context.getBean("stud1");
+		System.out.println(a);
+		
+		Student a1 = (Student) context.getBean("stud2");
+		System.out.println(a1);
+		
+		System.out.println("project ended");
+
+	}
+
+}

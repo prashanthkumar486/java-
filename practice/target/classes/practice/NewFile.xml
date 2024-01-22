@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean name="stud1" class="practice.Stud" p:sid="777" p:sname="manu"></bean>
+    <bean name="stud2" class="practice.Stud" p:sid="772" p:sname="ashok"></bean>
+    <bean name="stud3" class="practice.Stud" p:sid="775" p:sname="asm"></bean>
+    <bean name="stud4" class="practice.Stud" p:sid="778" p:sname="dg"></bean>
+    
+    <bean name="studen" class="practice.Students" p:id="1233">
+    <property name="stud">
+    <set>
+    <ref bean="stud1"></ref>
+     <ref bean="stud2"></ref>
+      <ref bean="stud3"></ref>
+       <ref bean="stud4"></ref>
+    </set>
+    </property>
+    </bean>
+    
+    <bean name="student" class="practice.Student"
+    p:id="102"  p:name="mahee">
+    <property name="books">
+    <list>
+    <value>manu</value>
+    <value>prashu</value>
+    </list>
+    </property>
+    <property name="sandl">
+    <map>
+    <entry key="111" value="dgdgg"></entry>
+    <entry key="222" value="hjdfsd"></entry>
+    </map>
+    </property>
+    <property name="students">
+    <set>
+    <ref bean="studen"></ref>
+    
+    
+    </set>
+    
+    </property>
+    </bean>
+	</beans>

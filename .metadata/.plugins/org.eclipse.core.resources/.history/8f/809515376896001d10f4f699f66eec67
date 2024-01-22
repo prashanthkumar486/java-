@@ -1,0 +1,31 @@
+package assespp;
+
+import java.util.Scanner;
+
+public class Duplicates {
+	static  final int nofchar=256;
+	
+	static void fillChar(String str, int[] count) {
+		for(int i=0;i<str.length();i++) 
+			count[str.charAt(i)]++;
+		
+	}
+	 
+	static void printDup(String str) {
+		int count[]=new int[nofchar];
+		fillChar(str,count);
+		
+		for(int i=0;i<nofchar;i++) {
+			if(count[i]>1) {
+				System.out.println((char)i+" count= "+count[i]);
+			}
+		}
+	}
+public static void main(String[] args) {
+	Scanner scanner=new Scanner(System.in);
+	System.out.println("enter  the String");
+	String str=scanner.next();
+	
+	printDup(str);
+}
+}

@@ -1,0 +1,15 @@
+package assespp;
+
+import java.util.Scanner;
+
+public class SumOfCorner {
+public static void main(String[] args) {
+	Scanner scanner=new Scanner(System.in);
+	System.out.println("Enter the size of m");
+	int size1=scanner.nextInt();
+	System.out.println("Enter the size of n");
+	int size2=scanner.nextInt();
+	int m
+	
+}
+}

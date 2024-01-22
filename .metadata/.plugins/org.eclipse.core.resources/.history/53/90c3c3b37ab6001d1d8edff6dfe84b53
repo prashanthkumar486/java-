@@ -1,0 +1,18 @@
+package javabeancalss;
+
+public class Account {
+	private static Account a= null;
+	
+	 private Account(){
+		System.out.println("object created");
+	}
+	 public static void createObject() {
+		 if(a==null) {
+			 System.out.println("account gets created");
+		 }
+		 else {
+			 System.out.println("accpunt not created");
+		 }
+	 }
+
+}

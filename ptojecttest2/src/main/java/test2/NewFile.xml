@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean name="vtu" class="test2.Vtu" p:vid="111" p:vname="bengaluru">
+    <property name="college">
+    
+    <bean name="college" class="test2.College" p:cid="222" p:cname="sjcit">
+    
+    <property name="branch" >
+    <bean name="branch" class="test2.Branch" p:bid="333" p:bname="ece">
+    <property name="student" >
+    <bean name="student" class="test2.Student" p:sid="444" p:sname="prashu">
+    
+    </bean>
+    
+    </property>
+    </bean>
+    
+    </property>
+    
+    </bean>
+    </property>
+    
+    </bean>
+
+</beans>
